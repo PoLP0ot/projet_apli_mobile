@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CreateRestaurantFragment">
+
+    <EditText
+        android:id="@+id/f_create_restaurant_edt_nomoffre"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Nom de l'offre"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/f_create_restaurant_edt_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:text="Nom de l'offre test" />
+
+    <EditText
+        android:id="@+id/f_create_restaurant_edt_type"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Type"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/f_create_restaurant_edt_categorie"
+        app:layout_constraintTop_toBottomOf="@+id/f_create_restaurant_edt_nomoffre"
+        app:layout_constraintVertical_bias="0.5"
+        tools:layout_editor_absoluteX="25dp"
+        tools:text="Type test" />
+
+    <EditText
+        android:id="@+id/f_create_restaurant_edt_categorie"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Catégorie"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/f_create_restaurant_edt_adresse"
+        app:layout_constraintTop_toBottomOf="@+id/f_create_restaurant_edt_type"
+        app:layout_constraintVertical_bias="0.5"
+        tools:text="Catégorie test" />
+
+    <EditText
+        android:id="@+id/f_create_restaurant_edt_adresse"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Adresse"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/f_create_restaurant_edt_commtel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f_create_restaurant_edt_categorie"
+        app:layout_constraintVertical_bias="0.5"
+        tools:text="Adresse test" />
+
+    <EditText
+        android:id="@+id/f_create_restaurant_edt_commtel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Numéro de téléphone"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/f_create_restaurant_edt_commweb"
+        app:layout_constraintTop_toBottomOf="@+id/f_create_restaurant_edt_adresse"
+        app:layout_constraintVertical_bias="0.5"
+        tools:text="0123456789" />
+
+
+    <EditText
+        android:id="@+id/f_create_restaurant_edt_commweb"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Site Web"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@id/f_create_restaurant_edt_latitude"
+        app:layout_constraintTop_toBottomOf="@+id/f_create_restaurant_edt_commtel"
+        app:layout_constraintVertical_bias="0.5"
+        tools:layout_editor_absoluteX="16dp"
+        tools:text="http://www.example.com" />
+
+    <EditText
+        android:id="@+id/f_create_restaurant_edt_latitude"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Latitude"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/f_create_restaurant_edt_commweb"
+        app:layout_constraintTop_toBottomOf="@id/f_create_restaurant_edt_commweb"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="31dp"
+        tools:text="0.00" />
+
+    <EditText
+        android:id="@+id/f_create_restaurant_edt_longitude"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Longitude"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@id/f_create_restaurant_btn_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/f_create_restaurant_edt_latitude"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="0.00" />
+
+    <Button
+        android:id="@+id/f_create_restaurant_btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f_create_restaurant_edt_commweb"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
